@@ -562,7 +562,6 @@ By adhering to these best practices and understanding the principles behind sort
 
 
 ## Recursion
-# Introduction to Recursion - Understand Recursion by printing something N times
 
 ## Pre-requisite
 The learner must know how to write a basic function in any language and how to make a function call from the main function.
@@ -587,3 +586,71 @@ It is the condition that is written in a recursive function in order for it to g
 To get a better understanding of how the base condition is an integral part of recursive functions, let us see an example below:
 
 Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
+
+```cpp
+      int count = 0;
+void func(){
+if(count == 3 ) return;
+print(count);
+count++;
+func();
+}
+main()
+{
+print();
+}
+```
+According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
+
+## Recursive code for printing numbers from 0 to 3:
+
+### C++
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int cnt = 0;
+
+void print(){
+   // Base Condition.
+   if(cnt == 3)  return;
+   cout<<cnt<<endl;
+
+   // Count Incremented
+   cnt++;
+   print();
+}
+
+int main(){
+    print();
+    return 0;
+}
+```
+### Output
+0
+1
+2
+
+## Recursive Tree
+
+A recursive tree is a visual representation of recursion, illustrating how functions are called and returned in a series of consecutive events. It provides a pictorial description of the recursive process.
+
+## Key Concepts
+
+- **Function Calls**: The tree shows how functions are called recursively.
+- **Return Flow**: It depicts how control returns to parent functions.
+- **Execution Order**: The tree illustrates the sequence of function executions.
+
+## Process
+
+1. Functions are called recursively, branching out in the tree structure.
+2. When a recursive call completes, control returns to its parent function.
+3. The parent function continues execution.
+4. This process repeats until the last function in the recursive stack returns.
+
+## Importance
+
+Recursive trees help in:
+- Visualizing the flow of recursive algorithms
+- Understanding the order of function calls and returns
+- Analyzing the depth and complexity of recursive processes
