@@ -588,7 +588,7 @@ To get a better understanding of how the base condition is an integral part of r
 Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
 
 ```cpp
-      int count = 0;
+int count = 0;
 void func(){
 if(count == 3 ) return;
 print(count);
