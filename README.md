@@ -10,7 +10,7 @@
 6. [Introduction to Recursion](#introduction-to-recursion)
 7. [Hashing](#hashing)
 8. [Sorting](#sorting)
-9. [Recursion](#recursion)
+
 
 ## Basics of C++
 
@@ -241,7 +241,7 @@ Queue follows the first-in, first-out (FIFO) approach, which means new elements 
 
 **Example:**
 
-![Queue Example](<image link>)
+![Queue Example](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example9.PNG)
 
 In the above example, you are using vector functions and some other functions to do some operations. After declaring the vector `v`, you add the elements inside the vector using the `push_back()` function and with the help of the loop. After that, you are displaying the size of the vector using the `size()` function. Now using the `resize()` function, you are resizing the vector size to 7.
 
@@ -423,6 +423,101 @@ int binary_search(int arr[], int low, int high, int x) {
 }
 ```
 
+
+## Recursion
+
+## Pre-requisite
+The learner must know how to write a basic function in any language and how to make a function call from the main function.
+
+## What is Recursion?
+It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
+
+Let's understand recursion with the help of an illustration:
+
+As we can see in the above image, a function is calling the same function inside its body. Since there is no condition to stop the recursive calls, the calls will run indefinitely until the stack runs out of memory (stack overflow).
+
+## What is Stack Overflow in Recursion?
+Whenever recursion calls are executed, they're simultaneously stored in a recursion stack where they wait for the completion of the recursive function. A recursive function can only be completed if a base condition is fulfilled and the control returns to the parent function.
+
+But, when there is no base condition given for a particular recursive function, it gets called indefinitely which results in a Stack Overflow i.e, exceeding the memory limit of the recursion stack and hence the program terminates giving a Segmentation Fault error.
+
+The illustration above also represents the case of a Stack Overflow as there is no terminating condition for recursion to stop, hence it will also result in a memory limit exceeded error.
+
+## Base Condition
+It is the condition that is written in a recursive function in order for it to get completed and not to run infinitely. After encountering the base condition, the function terminates and returns back to its parent function simultaneously.
+
+To get a better understanding of how the base condition is an integral part of recursive functions, let us see an example below:
+
+Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
+
+```cpp
+int count = 0;
+void func(){
+if(count == 3 ) return;
+print(count);
+count++;
+func();
+}
+main()
+{
+print();
+}
+```
+According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
+
+## Recursive code for printing numbers from 0 to 3:
+
+### C++
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int cnt = 0;
+
+void print(){
+   // Base Condition.
+   if(cnt == 3)  return;
+   cout<<cnt<<endl;
+
+   // Count Incremented
+   cnt++;
+   print();
+}
+
+int main(){
+    print();
+    return 0;
+}
+```
+### Output
+0
+1
+2
+
+## Recursive Tree
+
+A recursive tree is a visual representation of recursion, illustrating how functions are called and returned in a series of consecutive events. It provides a pictorial description of the recursive process.
+
+## Key Concepts
+
+- **Function Calls**: The tree shows how functions are called recursively.
+- **Return Flow**: It depicts how control returns to parent functions.
+- **Execution Order**: The tree illustrates the sequence of function executions.
+
+## Process
+
+1. Functions are called recursively, branching out in the tree structure.
+2. When a recursive call completes, control returns to its parent function.
+3. The parent function continues execution.
+4. This process repeats until the last function in the recursive stack returns.
+
+## Importance
+
+Recursive trees help in:
+- Visualizing the flow of recursive algorithms
+- Understanding the order of function calls and returns
+- Analyzing the depth and complexity of recursive processes
+
 ## Hashing
 
 Hashing is a technique used to uniquely identify a specific object from a group of similar objects.
@@ -582,96 +677,3 @@ Sorting algorithms are essential tools in computer science for arranging data in
 By adhering to these best practices and understanding the principles behind sorting algorithms, you can effectively choose and implement sorting solutions that meet the requirements of different applications and datasets.
 
 
-## Recursion
-
-## Pre-requisite
-The learner must know how to write a basic function in any language and how to make a function call from the main function.
-
-## What is Recursion?
-It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
-
-Let's understand recursion with the help of an illustration:
-
-As we can see in the above image, a function is calling the same function inside its body. Since there is no condition to stop the recursive calls, the calls will run indefinitely until the stack runs out of memory (stack overflow).
-
-## What is Stack Overflow in Recursion?
-Whenever recursion calls are executed, they're simultaneously stored in a recursion stack where they wait for the completion of the recursive function. A recursive function can only be completed if a base condition is fulfilled and the control returns to the parent function.
-
-But, when there is no base condition given for a particular recursive function, it gets called indefinitely which results in a Stack Overflow i.e, exceeding the memory limit of the recursion stack and hence the program terminates giving a Segmentation Fault error.
-
-The illustration above also represents the case of a Stack Overflow as there is no terminating condition for recursion to stop, hence it will also result in a memory limit exceeded error.
-
-## Base Condition
-It is the condition that is written in a recursive function in order for it to get completed and not to run infinitely. After encountering the base condition, the function terminates and returns back to its parent function simultaneously.
-
-To get a better understanding of how the base condition is an integral part of recursive functions, let us see an example below:
-
-Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
-
-```cpp
-int count = 0;
-void func(){
-if(count == 3 ) return;
-print(count);
-count++;
-func();
-}
-main()
-{
-print();
-}
-```
-According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
-
-## Recursive code for printing numbers from 0 to 3:
-
-### C++
-
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-int cnt = 0;
-
-void print(){
-   // Base Condition.
-   if(cnt == 3)  return;
-   cout<<cnt<<endl;
-
-   // Count Incremented
-   cnt++;
-   print();
-}
-
-int main(){
-    print();
-    return 0;
-}
-```
-### Output
-0
-1
-2
-
-## Recursive Tree
-
-A recursive tree is a visual representation of recursion, illustrating how functions are called and returned in a series of consecutive events. It provides a pictorial description of the recursive process.
-
-## Key Concepts
-
-- **Function Calls**: The tree shows how functions are called recursively.
-- **Return Flow**: It depicts how control returns to parent functions.
-- **Execution Order**: The tree illustrates the sequence of function executions.
-
-## Process
-
-1. Functions are called recursively, branching out in the tree structure.
-2. When a recursive call completes, control returns to its parent function.
-3. The parent function continues execution.
-4. This process repeats until the last function in the recursive stack returns.
-
-## Importance
-
-Recursive trees help in:
-- Visualizing the flow of recursive algorithms
-- Understanding the order of function calls and returns
-- Analyzing the depth and complexity of recursive processes
