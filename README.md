@@ -308,17 +308,7 @@ Basic mathematical concepts are essential for understanding and solving algorith
 7. **Check for Prime** - Easy
    - Write a function to check if a given number is a prime number.
 
-## Getting Started
 
-Each challenge is contained within its own directory, which includes a problem statement and a solution file. You can navigate to the directory of the challenge you want to attempt and follow the instructions provided.
-
-## Contributing
-
-Contributions are welcome! If you have a new challenge or an improvement to an existing solution, please fork the repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Introduction to Recursion
 
@@ -330,7 +320,7 @@ Recursion is a method where the solution to a problem depends on solutions to sm
 - Recursive Functions
 - Stack Memory
 - Tail Recursion
-# Recursion in Data Structures and Algorithms (DSA)
+
 
 Recursion is a fundamental concept in computer science and is extensively used in data structures and algorithms. This document provides a comprehensive overview of recursion, its importance, and how it is used in DSA.
 
