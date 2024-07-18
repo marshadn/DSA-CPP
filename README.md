@@ -162,7 +162,7 @@ If you are dealing with many elements, then you need to use some sort of contain
 
 Containers are further classified into three categories:
 
-![Containers Image](link/to/containers/image.png)
+![Containers Image](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example1.PNG)
 
 1. **Sequence Containers:** These are used to implement sequential data structures like a linked list, array, etc.
 2. **Associative Containers:** These are containers in which each element has a value that is related to a key. They are used to implement sorted data structures, for example, set, multiset, map, etc.
@@ -170,7 +170,28 @@ Containers are further classified into three categories:
 
 **Sequence Container:**
 
-- **Vectors:** Vectors can be defined as a dynamic array or an array with some additional features.
+- **Vectors:** Vectors can be defined as a dynamic array or an array with some additional features.<br>
+
+
+   **Syntax:**
+
+
+    ![vector](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example2.PNG)
+- **Dequeue:**  Deque is also known as a double-ended queue that allows inserting and deleting from both ends; they are more efficient than vectors in case of insertion and deletion.<br>
+
+
+  **Syntax:**
+
+  
+   ![dq](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example3.PNG)
+- **List:** List is also the sequential container and allows non-contiguous allocation. It allows insertion and deletion anywhere in the sequence.<br>
+
+
+  **Syntax:**
+
+  
+   ![list](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example4.PNG)
+  
 ## Iterators
 ## Associative Container
 
@@ -180,7 +201,7 @@ Set is an associative container that is used to store elements that are unique.
 
 **Syntax:**
 
-![Set Syntax](<image link>)
+![Set Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example5.PNG)
 
 ### Multiset
 
@@ -188,7 +209,7 @@ This container is similar to that of the set container; the only difference is t
 
 **Syntax:**
 
-![Multiset Syntax](<image link>)
+![Multiset Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example6.PNG)
 
 ### Map
 
@@ -196,7 +217,7 @@ Map container contains sets of key-value pairs where each key is associated with
 
 **Syntax:**
 
-![Map Syntax](<image link>)
+![Map Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example7.PNG)
 
 Here, the `int` is the key type, and the `int` is the value type.
 
@@ -206,7 +227,7 @@ These containers also store key-value pairs, but unlike maps, they can have dupl
 
 **Syntax:**
 
-![Multimap Syntax](<image link>)
+![Multimap Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example8.PNG)
 
 ## Container Adapter
 
