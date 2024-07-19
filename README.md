@@ -193,6 +193,7 @@ Containers are further classified into three categories:
    ![list](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example4.PNG)
   
 ## Iterators
+Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
 ## Associative Container
 
 ### Set
