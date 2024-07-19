@@ -263,6 +263,8 @@ In STL, different types of algorithms can be implemented with the help of iterat
 
 ### Types of Algorithms
 
+![image](https://github.com/user-attachments/assets/3d4bdf33-3ae2-41fc-8b10-f6c4126ce4be)
+
 - **Modifying algorithms**
 - **Non-modifying algorithms**
 - **Sorting algorithms**
