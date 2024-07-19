@@ -251,9 +251,7 @@ Iterators are used to access data in the containers, and they help in traversing
 
 ## Iterators
 Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its 
-functions. They can be incremented and decremented as per choice and help in the
-  
- manipulation of data in the container.
+functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
 ### Iterator Functions
 
 - **begin():** This function points the iterator to the first element of the container.
