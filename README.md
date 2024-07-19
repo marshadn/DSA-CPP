@@ -191,9 +191,7 @@ Containers are further classified into three categories:
 
   
    ![list](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example4.PNG)
-  
-## Iterators
-Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
+
 ## Associative Container
 
 ### Set
@@ -251,6 +249,11 @@ Using the `empty()` function, you check if the vector is empty; if it’s false,
 After that, you display all the vector elements using a for loop and functions like `begin()` and `end()`, pointing to the first element and the last element, respectively.
 Iterators are used to access data in the containers, and they help in traversing through elements of containers using their functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
 
+## Iterators
+Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its 
+functions. They can be incremented and decremented as per choice and help in the
+  
+ manipulation of data in the container.
 ### Iterator Functions
 
 - **begin():** This function points the iterator to the first element of the container.
