@@ -10,7 +10,8 @@
 6. [Introduction to Recursion](#introduction-to-recursion)
 7. [Hashing](#hashing)
 8. [Sorting](#sorting)
-9. [Recursion](#recursion)
+9. [Bit Manipulation](#bit-manipulation)
+
 
 ## Basics of C++
 
@@ -162,7 +163,7 @@ If you are dealing with many elements, then you need to use some sort of contain
 
 Containers are further classified into three categories:
 
-![Containers Image](link/to/containers/image.png)
+![Containers Image](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example1.PNG)
 
 1. **Sequence Containers:** These are used to implement sequential data structures like a linked list, array, etc.
 2. **Associative Containers:** These are containers in which each element has a value that is related to a key. They are used to implement sorted data structures, for example, set, multiset, map, etc.
@@ -170,8 +171,28 @@ Containers are further classified into three categories:
 
 **Sequence Container:**
 
-- **Vectors:** Vectors can be defined as a dynamic array or an array with some additional features.
-## Iterators
+- **Vectors:** Vectors can be defined as a dynamic array or an array with some additional features.<br>
+
+
+   **Syntax:**
+
+
+    ![vector](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example2.PNG)
+- **Dequeue:**  Deque is also known as a double-ended queue that allows inserting and deleting from both ends; they are more efficient than vectors in case of insertion and deletion.<br>
+
+
+  **Syntax:**
+
+  
+   ![dq](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example3.PNG)
+- **List:** List is also the sequential container and allows non-contiguous allocation. It allows insertion and deletion anywhere in the sequence.<br>
+
+
+  **Syntax:**
+
+  
+   ![list](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example4.PNG)
+
 ## Associative Container
 
 ### Set
@@ -180,7 +201,7 @@ Set is an associative container that is used to store elements that are unique.
 
 **Syntax:**
 
-![Set Syntax](<image link>)
+![Set Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example5.PNG)
 
 ### Multiset
 
@@ -188,7 +209,7 @@ This container is similar to that of the set container; the only difference is t
 
 **Syntax:**
 
-![Multiset Syntax](<image link>)
+![Multiset Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example6.PNG)
 
 ### Map
 
@@ -196,7 +217,7 @@ Map container contains sets of key-value pairs where each key is associated with
 
 **Syntax:**
 
-![Map Syntax](<image link>)
+![Map Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example7.PNG)
 
 Here, the `int` is the key type, and the `int` is the value type.
 
@@ -206,7 +227,7 @@ These containers also store key-value pairs, but unlike maps, they can have dupl
 
 **Syntax:**
 
-![Multimap Syntax](<image link>)
+![Multimap Syntax](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example8.PNG)
 
 ## Container Adapter
 
@@ -220,7 +241,7 @@ Queue follows the first-in, first-out (FIFO) approach, which means new elements 
 
 **Example:**
 
-![Queue Example](<image link>)
+![Queue Example](https://www.simplilearn.com/ice9/free_resources_article_thumb/C%2B%2B_STL_Example9.PNG)
 
 In the above example, you are using vector functions and some other functions to do some operations. After declaring the vector `v`, you add the elements inside the vector using the `push_back()` function and with the help of the loop. After that, you are displaying the size of the vector using the `size()` function. Now using the `resize()` function, you are resizing the vector size to 7.
 
@@ -229,6 +250,9 @@ Using the `empty()` function, you check if the vector is empty; if it’s false,
 After that, you display all the vector elements using a for loop and functions like `begin()` and `end()`, pointing to the first element and the last element, respectively.
 Iterators are used to access data in the containers, and they help in traversing through elements of containers using their functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
 
+## Iterators
+Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its 
+functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
 ### Iterator Functions
 
 - **begin():** This function points the iterator to the first element of the container.
@@ -239,6 +263,8 @@ Iterators are used to access data in the containers, and they help in traversing
 In STL, different types of algorithms can be implemented with the help of iterators. Algorithms can be defined as functions applied to the containers and provide operations for the content of the container. Examples include: `sort()`, `swap()`, `min()`, `max()`, etc.
 
 ### Types of Algorithms
+
+![image](https://github.com/user-attachments/assets/3d4bdf33-3ae2-41fc-8b10-f6c4126ce4be)
 
 - **Modifying algorithms**
 - **Non-modifying algorithms**
@@ -287,17 +313,7 @@ Basic mathematical concepts are essential for understanding and solving algorith
 7. **Check for Prime** - Easy
    - Write a function to check if a given number is a prime number.
 
-## Getting Started
 
-Each challenge is contained within its own directory, which includes a problem statement and a solution file. You can navigate to the directory of the challenge you want to attempt and follow the instructions provided.
-
-## Contributing
-
-Contributions are welcome! If you have a new challenge or an improvement to an existing solution, please fork the repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Introduction to Recursion
 
@@ -309,7 +325,7 @@ Recursion is a method where the solution to a problem depends on solutions to sm
 - Recursive Functions
 - Stack Memory
 - Tail Recursion
-# Recursion in Data Structures and Algorithms (DSA)
+
 
 Recursion is a fundamental concept in computer science and is extensively used in data structures and algorithms. This document provides a comprehensive overview of recursion, its importance, and how it is used in DSA.
 
@@ -401,6 +417,101 @@ int binary_search(int arr[], int low, int high, int x) {
     }
 }
 ```
+
+
+## Recursion
+
+## Pre-requisite
+The learner must know how to write a basic function in any language and how to make a function call from the main function.
+
+## What is Recursion?
+It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
+
+Let's understand recursion with the help of an illustration:
+
+As we can see in the above image, a function is calling the same function inside its body. Since there is no condition to stop the recursive calls, the calls will run indefinitely until the stack runs out of memory (stack overflow).
+
+## What is Stack Overflow in Recursion?
+Whenever recursion calls are executed, they're simultaneously stored in a recursion stack where they wait for the completion of the recursive function. A recursive function can only be completed if a base condition is fulfilled and the control returns to the parent function.
+
+But, when there is no base condition given for a particular recursive function, it gets called indefinitely which results in a Stack Overflow i.e, exceeding the memory limit of the recursion stack and hence the program terminates giving a Segmentation Fault error.
+
+The illustration above also represents the case of a Stack Overflow as there is no terminating condition for recursion to stop, hence it will also result in a memory limit exceeded error.
+
+## Base Condition
+It is the condition that is written in a recursive function in order for it to get completed and not to run infinitely. After encountering the base condition, the function terminates and returns back to its parent function simultaneously.
+
+To get a better understanding of how the base condition is an integral part of recursive functions, let us see an example below:
+
+Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
+
+```cpp
+int count = 0;
+void func(){
+if(count == 3 ) return;
+print(count);
+count++;
+func();
+}
+main()
+{
+print();
+}
+```
+According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
+
+## Recursive code for printing numbers from 0 to 3:
+
+### C++
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int cnt = 0;
+
+void print(){
+   // Base Condition.
+   if(cnt == 3)  return;
+   cout<<cnt<<endl;
+
+   // Count Incremented
+   cnt++;
+   print();
+}
+
+int main(){
+    print();
+    return 0;
+}
+```
+### Output
+0
+1
+2
+
+## Recursive Tree
+
+A recursive tree is a visual representation of recursion, illustrating how functions are called and returned in a series of consecutive events. It provides a pictorial description of the recursive process.
+
+## Key Concepts
+
+- **Function Calls**: The tree shows how functions are called recursively.
+- **Return Flow**: It depicts how control returns to parent functions.
+- **Execution Order**: The tree illustrates the sequence of function executions.
+
+## Process
+
+1. Functions are called recursively, branching out in the tree structure.
+2. When a recursive call completes, control returns to its parent function.
+3. The parent function continues execution.
+4. This process repeats until the last function in the recursive stack returns.
+
+## Importance
+
+Recursive trees help in:
+- Visualizing the flow of recursive algorithms
+- Understanding the order of function calls and returns
+- Analyzing the depth and complexity of recursive processes
 
 ## Hashing
 
@@ -561,96 +672,181 @@ Sorting algorithms are essential tools in computer science for arranging data in
 By adhering to these best practices and understanding the principles behind sorting algorithms, you can effectively choose and implement sorting solutions that meet the requirements of different applications and datasets.
 
 
-## Recursion
 
-## Pre-requisite
-The learner must know how to write a basic function in any language and how to make a function call from the main function.
+## Bit Manipulation
 
-## What is Recursion?
-It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
+Bit manipulation is an essential topic in computer science and programming. It involves manipulating bits, the smallest unit of data in a computer. This README provides a comprehensive guide on various aspects of bit manipulation including binary number conversions, 1's and 2's complements, and bitwise operators.
 
-Let's understand recursion with the help of an illustration:
+## Table of Contents
 
-As we can see in the above image, a function is calling the same function inside its body. Since there is no condition to stop the recursive calls, the calls will run indefinitely until the stack runs out of memory (stack overflow).
+1. [Binary Number Conversions](#binary-number-conversions)
+    - [Decimal to Binary](#decimal-to-binary)
+    - [Binary to Decimal](#binary-to-decimal)
+    - [Binary to Hexadecimal](#binary-to-hexadecimal)
+    - [Hexadecimal to Binary](#hexadecimal-to-binary)
+    - [Binary to Octal](#binary-to-octal)
+    - [Octal to Binary](#octal-to-binary)
+2. [1's and 2's Complements](#1s-and-2s-complements)
+    - [1's Complement](#1s-complement)
+    - [2's Complement](#2s-complement)
+3. [Bitwise Operators](#bitwise-operators)
+    - [AND Operator](#and-operator)
+    - [OR Operator](#or-operator)
+    - [XOR Operator](#xor-operator)
+    - [NOT Operator](#not-operator)
+    - [Shift Operators](#shift-operators)
 
-## What is Stack Overflow in Recursion?
-Whenever recursion calls are executed, they're simultaneously stored in a recursion stack where they wait for the completion of the recursive function. A recursive function can only be completed if a base condition is fulfilled and the control returns to the parent function.
+## Binary Number Conversions
 
-But, when there is no base condition given for a particular recursive function, it gets called indefinitely which results in a Stack Overflow i.e, exceeding the memory limit of the recursion stack and hence the program terminates giving a Segmentation Fault error.
+Binary number conversions are fundamental in understanding bit manipulation. Here, we explore various conversions involving binary numbers.
 
-The illustration above also represents the case of a Stack Overflow as there is no terminating condition for recursion to stop, hence it will also result in a memory limit exceeded error.
+### Decimal to Binary
 
-## Base Condition
-It is the condition that is written in a recursive function in order for it to get completed and not to run infinitely. After encountering the base condition, the function terminates and returns back to its parent function simultaneously.
+To convert a decimal number to binary, divide the number by 2 and record the remainder. Repeat this process with the quotient until the quotient is zero. The binary representation is the sequence of remainders read in reverse order.
 
-To get a better understanding of how the base condition is an integral part of recursive functions, let us see an example below:
+**Example:**
 
-Let's say we have to print integers starting from 0 till 2 only, this will be how the pseudocode for it will look like:
+- Decimal: 10
+- Binary: 1010
 
-```cpp
-int count = 0;
-void func(){
-if(count == 3 ) return;
-print(count);
-count++;
-func();
-}
-main()
-{
-print();
-}
-```
-According to this pseudocode, the function will increment and print the value of count and then return when the base condition becomes true i.e, it will only print 0,1,2 and 3 and then execution gets completed.
+### Binary to Decimal
 
-## Recursive code for printing numbers from 0 to 3:
+To convert a binary number to decimal, multiply each bit by 2 raised to the power of its position from the right (starting from 0) and sum the results.
 
-### C++
+**Example:**
 
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-int cnt = 0;
+- Binary: 1010
+- Decimal: \(1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 0 \times 2^0 = 8 + 0 + 2 + 0 = 10\)
 
-void print(){
-   // Base Condition.
-   if(cnt == 3)  return;
-   cout<<cnt<<endl;
+### Binary to Hexadecimal
 
-   // Count Incremented
-   cnt++;
-   print();
-}
+To convert binary to hexadecimal, group the binary digits into sets of four (starting from the right) and convert each set to its hexadecimal equivalent.
 
-int main(){
-    print();
-    return 0;
-}
-```
-### Output
-0
-1
-2
+**Example:**
 
-## Recursive Tree
+- Binary: 10101100
+- Grouped: 1010 1100
+- Hexadecimal: AC
 
-A recursive tree is a visual representation of recursion, illustrating how functions are called and returned in a series of consecutive events. It provides a pictorial description of the recursive process.
+### Hexadecimal to Binary
 
-## Key Concepts
+To convert hexadecimal to binary, convert each hexadecimal digit to its 4-bit binary equivalent.
 
-- **Function Calls**: The tree shows how functions are called recursively.
-- **Return Flow**: It depicts how control returns to parent functions.
-- **Execution Order**: The tree illustrates the sequence of function executions.
+**Example:**
 
-## Process
+- Hexadecimal: AC
+- Binary: 1010 1100
 
-1. Functions are called recursively, branching out in the tree structure.
-2. When a recursive call completes, control returns to its parent function.
-3. The parent function continues execution.
-4. This process repeats until the last function in the recursive stack returns.
+### Binary to Octal
 
-## Importance
+To convert binary to octal, group the binary digits into sets of three (starting from the right) and convert each set to its octal equivalent.
 
-Recursive trees help in:
-- Visualizing the flow of recursive algorithms
-- Understanding the order of function calls and returns
-- Analyzing the depth and complexity of recursive processes
+**Example:**
+
+- Binary: 10101100
+- Grouped: 010 101 100
+- Octal: 254
+
+### Octal to Binary
+
+To convert octal to binary, convert each octal digit to its 3-bit binary equivalent.
+
+**Example:**
+
+- Octal: 254
+- Binary: 010 101 100
+
+## 1's and 2's Complements
+
+1's and 2's complements are methods to represent negative numbers in binary.
+
+### 1's Complement
+
+1's complement of a binary number is obtained by inverting all bits (changing 1s to 0s and 0s to 1s).
+
+**Example:**
+
+- Binary: 1010
+- 1's Complement: 0101
+
+### 2's Complement
+
+2's complement is obtained by adding 1 to the 1's complement of the number. It is widely used in computer systems to represent negative numbers.
+
+**Example:**
+
+- Binary: 1010
+- 1's Complement: 0101
+- 2's Complement: 0101 + 1 = 0110
+
+## Bitwise Operators
+
+Bitwise operators are used to perform operations on individual bits of binary numbers. Here we discuss common bitwise operators.
+
+### AND Operator
+
+The AND operator (&) performs a logical AND operation on each pair of corresponding bits of two numbers. The result is 1 only if both bits are 1.
+
+**Example:**
+
+- 1010
+- AND 0110
+- Result: 0010
+
+### OR Operator
+
+The OR operator (|) performs a logical OR operation on each pair of corresponding bits of two numbers. The result is 1 if at least one of the bits is 1.
+
+**Example:**
+
+- 1010
+- OR 0110
+- Result: 1110
+
+### XOR Operator
+
+The XOR operator (^) performs a logical XOR operation on each pair of corresponding bits of two numbers. The result is 1 if only one of the bits is 1.
+
+**Example:**
+
+- 1010
+- XOR 0110
+- Result: 1100
+
+### NOT Operator
+
+The NOT operator (~) inverts all bits of a number (changing 1s to 0s and 0s to 1s).
+
+**Example:**
+
+- Binary: 1010
+- NOT: 0101
+
+### Shift Operators
+
+Shift operators shift the bits of a number to the left or right. They include left shift (<<) and right shift (>>).
+
+#### Left Shift (<<)
+
+The left shift operator shifts bits to the left by a specified number of positions. Bits shifted out from the left are discarded, and zero bits are shifted in from the right.
+
+**Example:**
+
+- Binary: 1010
+- Left Shift by 2: 101000
+
+#### Right Shift (>>)
+
+The right shift operator shifts bits to the right by a specified number of positions. Bits shifted out from the right are discarded, and zero bits are shifted in from the left.
+
+**Example:**
+
+- Binary: 1010
+- Right Shift by 2: 0010
+
+Bitwise operations are fundamental in low-level programming and are extensively used in system programming, cryptography, network programming, and more. Understanding these concepts is crucial for efficient coding and optimization.
+
+---
+
+
+
