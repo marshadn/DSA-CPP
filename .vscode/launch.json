@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Lenovo/degree/Desktop/A2Z DSA",
-      "program": "c:/Users/Lenovo/degree/Desktop/A2Z DSA/build/Debug/outDebug",
+      "cwd": "c:/Users/Lenovo/degree/Desktop/File(s)/A2Z DSA",
+      "program": "c:/Users/Lenovo/degree/Desktop/File(s)/A2Z DSA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
