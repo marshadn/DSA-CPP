@@ -10,6 +10,7 @@
 6. [Introduction to Recursion](#introduction-to-recursion)
 7. [Hashing](#hashing)
 8. [Sorting](#sorting)
+9. [Bit Manipulation](#bit-manipulation)
 
 
 ## Basics of C++
@@ -669,5 +670,183 @@ Sorting algorithms are essential tools in computer science for arranging data in
 - **Consider stability**: Some sorting algorithms are stable, meaning they maintain the relative order of equal elements (elements with the same key). If preserving the original order of equal elements is important in your application, choose a stable sorting algorithm.
 
 By adhering to these best practices and understanding the principles behind sorting algorithms, you can effectively choose and implement sorting solutions that meet the requirements of different applications and datasets.
+
+
+
+## Bit Manipulation
+
+Bit manipulation is an essential topic in computer science and programming. It involves manipulating bits, the smallest unit of data in a computer. This README provides a comprehensive guide on various aspects of bit manipulation including binary number conversions, 1's and 2's complements, and bitwise operators.
+
+## Table of Contents
+
+1. [Binary Number Conversions](#binary-number-conversions)
+    - [Decimal to Binary](#decimal-to-binary)
+    - [Binary to Decimal](#binary-to-decimal)
+    - [Binary to Hexadecimal](#binary-to-hexadecimal)
+    - [Hexadecimal to Binary](#hexadecimal-to-binary)
+    - [Binary to Octal](#binary-to-octal)
+    - [Octal to Binary](#octal-to-binary)
+2. [1's and 2's Complements](#1s-and-2s-complements)
+    - [1's Complement](#1s-complement)
+    - [2's Complement](#2s-complement)
+3. [Bitwise Operators](#bitwise-operators)
+    - [AND Operator](#and-operator)
+    - [OR Operator](#or-operator)
+    - [XOR Operator](#xor-operator)
+    - [NOT Operator](#not-operator)
+    - [Shift Operators](#shift-operators)
+
+## Binary Number Conversions
+
+Binary number conversions are fundamental in understanding bit manipulation. Here, we explore various conversions involving binary numbers.
+
+### Decimal to Binary
+
+To convert a decimal number to binary, divide the number by 2 and record the remainder. Repeat this process with the quotient until the quotient is zero. The binary representation is the sequence of remainders read in reverse order.
+
+**Example:**
+
+- Decimal: 10
+- Binary: 1010
+
+### Binary to Decimal
+
+To convert a binary number to decimal, multiply each bit by 2 raised to the power of its position from the right (starting from 0) and sum the results.
+
+**Example:**
+
+- Binary: 1010
+- Decimal: \(1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 0 \times 2^0 = 8 + 0 + 2 + 0 = 10\)
+
+### Binary to Hexadecimal
+
+To convert binary to hexadecimal, group the binary digits into sets of four (starting from the right) and convert each set to its hexadecimal equivalent.
+
+**Example:**
+
+- Binary: 10101100
+- Grouped: 1010 1100
+- Hexadecimal: AC
+
+### Hexadecimal to Binary
+
+To convert hexadecimal to binary, convert each hexadecimal digit to its 4-bit binary equivalent.
+
+**Example:**
+
+- Hexadecimal: AC
+- Binary: 1010 1100
+
+### Binary to Octal
+
+To convert binary to octal, group the binary digits into sets of three (starting from the right) and convert each set to its octal equivalent.
+
+**Example:**
+
+- Binary: 10101100
+- Grouped: 010 101 100
+- Octal: 254
+
+### Octal to Binary
+
+To convert octal to binary, convert each octal digit to its 3-bit binary equivalent.
+
+**Example:**
+
+- Octal: 254
+- Binary: 010 101 100
+
+## 1's and 2's Complements
+
+1's and 2's complements are methods to represent negative numbers in binary.
+
+### 1's Complement
+
+1's complement of a binary number is obtained by inverting all bits (changing 1s to 0s and 0s to 1s).
+
+**Example:**
+
+- Binary: 1010
+- 1's Complement: 0101
+
+### 2's Complement
+
+2's complement is obtained by adding 1 to the 1's complement of the number. It is widely used in computer systems to represent negative numbers.
+
+**Example:**
+
+- Binary: 1010
+- 1's Complement: 0101
+- 2's Complement: 0101 + 1 = 0110
+
+## Bitwise Operators
+
+Bitwise operators are used to perform operations on individual bits of binary numbers. Here we discuss common bitwise operators.
+
+### AND Operator
+
+The AND operator (&) performs a logical AND operation on each pair of corresponding bits of two numbers. The result is 1 only if both bits are 1.
+
+**Example:**
+
+- 1010
+- AND 0110
+- Result: 0010
+
+### OR Operator
+
+The OR operator (|) performs a logical OR operation on each pair of corresponding bits of two numbers. The result is 1 if at least one of the bits is 1.
+
+**Example:**
+
+- 1010
+- OR 0110
+- Result: 1110
+
+### XOR Operator
+
+The XOR operator (^) performs a logical XOR operation on each pair of corresponding bits of two numbers. The result is 1 if only one of the bits is 1.
+
+**Example:**
+
+- 1010
+- XOR 0110
+- Result: 1100
+
+### NOT Operator
+
+The NOT operator (~) inverts all bits of a number (changing 1s to 0s and 0s to 1s).
+
+**Example:**
+
+- Binary: 1010
+- NOT: 0101
+
+### Shift Operators
+
+Shift operators shift the bits of a number to the left or right. They include left shift (<<) and right shift (>>).
+
+#### Left Shift (<<)
+
+The left shift operator shifts bits to the left by a specified number of positions. Bits shifted out from the left are discarded, and zero bits are shifted in from the right.
+
+**Example:**
+
+- Binary: 1010
+- Left Shift by 2: 101000
+
+#### Right Shift (>>)
+
+The right shift operator shifts bits to the right by a specified number of positions. Bits shifted out from the right are discarded, and zero bits are shifted in from the left.
+
+**Example:**
+
+- Binary: 1010
+- Right Shift by 2: 0010
+
+Bitwise operations are fundamental in low-level programming and are extensively used in system programming, cryptography, network programming, and more. Understanding these concepts is crucial for efficient coding and optimization.
+
+---
+
 
 
