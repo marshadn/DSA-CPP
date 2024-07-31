@@ -1,5 +1,5 @@
 # Data Structures and Algorithms Learning Guide
-
+-------------------------------------------------
 ## Table of Contents
 
 1. [Basics of C++](#basics-of-c)
