@@ -1,0 +1,117 @@
+Array Concepts
+----------------
+1.Largst elmnt.
+2.Second large.
+3.Third Large.
+4.Second smallest.
+5.Check arr is sorted.
+6.Remove dups.
+7.Left rotate by k places.
+8.Move all 0's to end.
+9.Linear Search.
+10.Union of 2 arr.
+11.INtersection of 2 arr.
+12.Find  missing no.in arr.
+13.Max.consecutive 1's.
+14.No. that appears once,others twice,thrice etc..
+15.Longest subarr with k sum.
+16.Two sum.
+17.Three sum.
+18.Four sum.
+19.Sort arr of 1's,2's,3's.
+20.Binary search.
+21.Leadres in  arr.
+22.Max.product subarr.
+23.Next permutation.
+24.Spiral Matrix.
+25.Rerrrange by sign.
+26.Rotate matrix by 90 degree.
+27.Rotate by k places.
+28.Set Matrix 0's.
+29.Stock Buy & sell.
+30.Longest consecutive sequence.
+
+
+
+
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
