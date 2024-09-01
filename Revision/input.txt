@@ -1,0 +1,9 @@
+Important Sorting Algos for all DSA rounds
+
+1.selection
+2.bubble 
+3.insertion 
+
+
+4.quick
+5.merge
