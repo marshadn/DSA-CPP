@@ -1,9 +1,10 @@
-Important Sorting Algos for all DSA rounds
+Important Sorting Algos for all DSA rounds..
 
-1.selection
-2.bubble 
-3.insertion 
+1.selection sort 
+2.bubble sort
+3.insertion sort
 
+4.quick sort
+5.merge sort
 
-4.quick
-5.merge
+concepts behind the varying of time complexities is most asked!
