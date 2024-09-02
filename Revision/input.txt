@@ -8,3 +8,26 @@ Important Sorting Algos for all DSA rounds..
 5.merge sort
 
 concepts behind the varying of time complexities is most asked!
+
+strings to do 
+---------------
+Sum of the numbers in a String
+Capitalize first and last character of each word
+Calculate frequency of characters in a string
+Find Non-repeating characters of a String
+Check if two strings are anagram of each other
+Count common sub-sequence in two strings
+Check if two strings match where one string contains wildcard characters
+Return maximum occurring character in the input string
+Remove all duplicates from the input string.
+Print all the duplicates in the input string.
+Remove characters from first string present in the second string
+Change every letter with the next lexicographic alphabet in the given string
+Write a program to find the largest word in a given string.
+Write a program to sort characters in a string
+Count number of words in a given string
+Write a program to find a word in a given string which has the highest number of repeated letters
+Change case of each character in a string
+Concatenate one string to another
+Write a program to find a substring within a string. If found display its starting position
+Reverse words in a string
