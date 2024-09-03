@@ -5,4 +5,4 @@
 *.exe
 
 # Ignore copy.cpp file
-copy.cpp
+copy.cpp/
