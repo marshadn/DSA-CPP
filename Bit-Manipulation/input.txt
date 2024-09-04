@@ -5,3 +5,8 @@ for a n to be odd or even check :
 
 for n to be divide by 2 :
         n>>1(which is equivalent to n/2)
+
+
+for finding power of 2 :
+        use 1<<n(which is equivalent 2^n)
+
