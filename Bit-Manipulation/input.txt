@@ -1,0 +1,7 @@
+for a n to be odd or even check :
+        if(n&1):-->print as "odd"
+        else:-->print as "even"
+
+
+for n to be divide by 2 :
+        n>>1(which is equivalent to n/2)
