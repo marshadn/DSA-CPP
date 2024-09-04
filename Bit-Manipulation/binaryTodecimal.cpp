@@ -12,7 +12,7 @@ int main()
     else
     {
         for (int i = bin.length() - 1; i >= 0; i--)
-        {
+        {   
             if (bin[i] == '1')
 
                 dec += base;
