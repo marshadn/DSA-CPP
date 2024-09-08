@@ -7,10 +7,10 @@ int bs(vector<int> &arr, int low, int high, int target)
         return -1;
     else if (arr[mid] == target)
         return mid;
-    else if (arr[mid < target])
-        return bs(arr, low + 1, high, target);
+    else if (arr[mid] < target)
+        return bs(arr, mid + 1, high, target);
     else
-        return bs(arr, low, high - 1, target);
+        return bs(arr, low, mid - 1, target);
 }
 
 int main()
