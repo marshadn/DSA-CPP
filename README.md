@@ -1134,7 +1134,5 @@ For those interested in exploring dynamic programming further, here are some rec
 
 ---
 
-Feel free to contribute to this repository by providing additional insights or examples of dynamic programming applications. Let's make this a valuable resource for understanding and applying dynamic programming techniques.
-
 
 
