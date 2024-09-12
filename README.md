@@ -644,7 +644,7 @@ void selectionSort(int arr[], int n) {
 }
 
 ```
-```cpp
+cpp
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; ++i) {
         int key = arr[i];
