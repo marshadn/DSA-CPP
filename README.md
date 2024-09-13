@@ -13,7 +13,7 @@
 9. [Bit Manipulation](#bit-manipulation)
 10. [Dynamic Programming](#dynamic-programming)
 
-----------------------------------------------------
+--------------------------------------
 ## Basics of C++
 
 Basics of C++ is fundamental for understanding data structures and algorithms. Some key topics include:
