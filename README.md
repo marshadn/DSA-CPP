@@ -13,7 +13,7 @@
 9. [Bit Manipulation](#bit-manipulation)
 10. [Dynamic Programming](#dynamic-programming)
 
--------------------------------------------------------
+------------------------------------------------
 ## Basics of C++
 
 Basics of C++ is fundamental for understanding data structures and algorithms. Some key topics include:
@@ -644,7 +644,7 @@ void selectionSort(int arr[], int n) {
 }
 
 ```
-```cpp
+cpp
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; ++i) {
         int key = arr[i];
@@ -1133,8 +1133,6 @@ For those interested in exploring dynamic programming further, here are some rec
    - [edX - Introduction to Computer Science and Programming by MIT](https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python) - A course offering an introduction to computer science concepts, including dynamic programming.
 
 ---
-
-Feel free to contribute to this repository by providing additional insights or examples of dynamic programming applications. Let's make this a valuable resource for understanding and applying dynamic programming techniques.
 
 
 
