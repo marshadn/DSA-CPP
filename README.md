@@ -643,7 +643,7 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-```
+  
 cpp
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; ++i) {
@@ -1135,4 +1135,164 @@ For those interested in exploring dynamic programming further, here are some rec
 ---
 
 
+
+
+---
+
+## Table of Contents
+1. [Linked List](#linked-list)
+2. [Stack](#stack)
+3. [Queue](#queue)
+4. [Trees](#trees)
+5. [Graphs](#graphs)
+6. [Tries](#tries)
+
+---
+
+## Linked List
+
+### Definition
+A **Linked List** is a linear data structure where elements are stored in nodes. Each node contains a data part and a reference (or pointer) to the next node in the sequence.
+
+### Types:
+- **Singly Linked List**: Each node points to the next node.
+- **Doubly Linked List**: Each node points to both the next and the previous nodes.
+- **Circular Linked List**: The last node points back to the first node.
+
+### Operations:
+- **Insertion**: Add elements at the beginning, end, or at a specific position.
+- **Deletion**: Remove elements from the beginning, end, or a specific position.
+- **Traversal**: Go through each node starting from the head.
+
+### Time Complexity:
+- **Insertion**: O(1) at the head, O(n) for arbitrary position.
+- **Deletion**: O(1) for head, O(n) for arbitrary position.
+- **Search**: O(n)
+
+---
+
+## Stack
+
+### Definition
+A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle. The last element added is the first one to be removed.
+
+### Operations:
+- **Push**: Add an element to the top.
+- **Pop**: Remove the top element.
+- **Peek/Top**: Return the top element without removing it.
+- **IsEmpty**: Check if the stack is empty.
+
+### Applications:
+- Function call management (recursion).
+- Undo operations in text editors.
+- Expression evaluation and syntax parsing.
+
+### Time Complexity:
+- **Push, Pop, Peek**: O(1)
+
+---
+
+## Queue
+
+### Definition
+A **Queue** is a linear data structure that follows the **FIFO (First In, First Out)** principle. The first element added is the first one to be removed.
+
+### Types:
+- **Simple Queue**: Basic FIFO structure.
+- **Circular Queue**: The last element points back to the first.
+- **Priority Queue**: Elements are dequeued based on priority rather than insertion order.
+
+### Operations:
+- **Enqueue**: Add an element to the rear.
+- **Dequeue**: Remove the front element.
+- **Front**: Get the front element without removing it.
+- **IsEmpty**: Check if the queue is empty.
+
+### Applications:
+- CPU scheduling.
+- Printer queue management.
+- BFS (Breadth-First Search) in graphs.
+
+### Time Complexity:
+- **Enqueue, Dequeue**: O(1)
+
+---
+
+## Trees
+
+### Definition
+A **Tree** is a hierarchical data structure with a root node and children represented as a set of linked nodes. It has a recursive structure, meaning each subtree is also a tree.
+
+### Types:
+- **Binary Tree**: Each node has at most two children.
+- **Binary Search Tree (BST)**: A binary tree where the left child node contains values smaller than the parent and the right child node contains values greater than the parent.
+- **AVL Tree**: A self-balancing binary search tree.
+- **Heap**: A complete binary tree used in heap sort.
+  
+### Operations:
+- **Insertion**: Insert nodes at appropriate positions.
+- **Deletion**: Remove a node and rearrange the tree.
+- **Traversal**: In-order, Pre-order, Post-order, Level-order.
+
+### Applications:
+- Hierarchical data representation (e.g., file systems).
+- Expression parsing in compilers.
+- Database indexing (B-Trees).
+
+### Time Complexity:
+- **Search, Insertion, Deletion**: O(log n) for balanced trees, O(n) for unbalanced trees.
+
+---
+
+## Graphs
+
+### Definition
+A **Graph** is a collection of nodes (called vertices) and edges connecting them. Graphs can be directed or undirected.
+
+### Types:
+- **Undirected Graph**: Edges have no direction.
+- **Directed Graph (Digraph)**: Edges have a direction.
+- **Weighted Graph**: Edges have weights.
+  
+### Representation:
+- **Adjacency Matrix**: A 2D array to represent connections.
+- **Adjacency List**: A list of lists to represent connections.
+
+### Operations:
+- **BFS (Breadth-First Search)**: Explore neighbors level by level.
+- **DFS (Depth-First Search)**: Explore as far as possible along a branch.
+- **Shortest Path Algorithms**: Dijkstra's, Bellman-Ford.
+- **Minimum Spanning Tree**: Prim's, Kruskal's.
+
+### Applications:
+- Social networks, GPS systems, network routing.
+- Pathfinding in games.
+  
+### Time Complexity:
+- **BFS, DFS**: O(V + E) where V is the number of vertices and E is the number of edges.
+
+---
+
+## Tries
+
+### Definition
+A **Trie** (also called a prefix tree) is a specialized tree used to store associative data structures. It is used primarily for quick retrieval of keys, such as words in a dictionary.
+
+### Operations:
+- **Insert**: Add a word or string to the trie.
+- **Search**: Check if a word or string is in the trie.
+- **Prefix Search**: Find all strings that start with a given prefix.
+
+### Applications:
+- Autocomplete features.
+- Spell-checking.
+- IP routing.
+
+### Time Complexity:
+- **Insert, Search**: O(L), where L is the length of the word being inserted or searched.
+
+---
+
+## Conclusion
+Understanding these fundamental data structures is essential for developing efficient algorithms and solving complex problems in software engineering. Each data structure has its specific use cases, and selecting the right one can significantly optimize the performance of your application.
 
